@@ -29,7 +29,7 @@ header {
 }
 header a:hover {
   color: #ecc74b;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeIn {
@@ -42,9 +42,7 @@ header a:hover {
     transform: translateY(0);
   }
 }
-a {
-  text-decoration: none;
-}
+
 img {
   width: 80%;
   height: auto;
@@ -97,7 +95,7 @@ nav {
 
 .menu a {
   display: block;
-  padding: 10px;
+  padding: 8px;
   color: white;
   text-decoration: none;
   position: relative;
@@ -126,14 +124,16 @@ section h2 {
   font-size: 50px;
   color: antiquewhite;
   font-family: "Lora", serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 h3 {
   font-family: "Lora", serif;
   color: antiquewhite;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 hr {
-  width: 90%;
-  margin: 20px auto;
+  width: 85%;
+  margin: 10px auto;
   color: antiquewhite;
 }
 p {
@@ -141,14 +141,97 @@ p {
   color: white;
   font-size: 22px;
   padding: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+/*skills*/
+.icons {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  background-color: rgb(19, 145, 113);
+  height: 40vh;
+  width: 85vw;
+  margin-left: 2rem;
+  border-radius: 50px;
+}
+.adobe {
+  width: 50%;
+  grid-column: 1 / 2;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+.html {
+  width: 110%;
+  grid-column: 2 / 3;
+  position: relative;
+  right: 65px;
+  top: 15px;
+}
+.css {
+  width: 110%;
+  grid-column: 3 / 4;
+  position: relative;
+  right: 60px;
+  top: 15px;
+}
+.js {
+  width: 180%;
+  grid-column: 4 / 5;
+  position: relative;
+  right: 100px;
+  bottom: 2rem;
+}
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 45px;
+  height: 85vh;
+  width: 85vw;
+  place-self: center;
+  background-color: rgb(19, 145, 113);
+  margin-top: 2rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+.skills-line {
+  position: relative;
+  z-index: 1;
+  top: 130px;
+  width: 75%;
+}
+.portrait {
+  position: relative;
+  z-index: 1;
+  top: 60px;
+  right: 10px;
+  width: 90%;
+  height: auto;
+}
+.portraitbw {
+  position: relative;
+  z-index: 1;
+
+  grid-column: 2;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease; /* Smooth transition */
+  grid-row: 0;
+}
+.om-mig {
+  padding: 40px;
+}
+
+.portraitbw:hover {
+  opacity: 0; /* Change opacity on hover */
 }
 .portfolio {
   height: 200vh;
   width: 90vw;
   place-self: center;
   background-color: rgb(19, 145, 113, 0.6);
-  margin-top: 2rem;
+  margin-bottom: -2rem;
   border-radius: 50px;
+  margin-top: 2rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 .portfolio:hover {
   background-color: rgb(19, 145, 113);
@@ -166,7 +249,7 @@ p {
 .container img {
   object-fit: cover;
   border: 2mm solid antiquewhite;
-  margin-left: 2rem;
+  margin-left: 3.5rem;
 }
 
 .blue-cafe {
@@ -226,6 +309,15 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  p {
+    font-size: 17px;
+  }
+  .portraitbw {
+    width: 98%;
+    height: auto;
+    right: 30px;
+    bottom: 397px;
+  }
   .container {
     margin: 50px;
     display: grid;
@@ -247,6 +339,7 @@ p {
   }
 
   .portfolio {
+    width: 85vw;
     max-height: 80vh;
   }
 
@@ -276,12 +369,12 @@ p {
     display: block;
     background-color: rgb(19, 145, 113, 0.7);
     position: absolute;
-    top: 170px;
+    top: 20px;
     left: 0;
     width: 100%;
     padding: 20px 0;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
   }
 
   nav.active .menu li {
@@ -293,11 +386,10 @@ p {
     font-size: 25px;
     text-transform: uppercase;
   }
-  .logo img {
-    max-width: 50%;
-  }
+
   .logo {
-    left: 240px;
+    left: 200px;
+    width: 50%;
   }
 
   html {
@@ -305,9 +397,6 @@ p {
   }
 }
 @media screen and (max-width: 600px) {
-  .logo {
-    left: 150px;
-  }
   nav.active .menu li {
     margin-left: 25rem;
   }
