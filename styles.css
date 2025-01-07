@@ -89,10 +89,6 @@ nav {
   margin-right: 30px;
 }
 
-.menu li:last-child {
-  margin-right: 0;
-}
-
 .menu a {
   display: block;
   padding: 8px;
@@ -101,6 +97,7 @@ nav {
   position: relative;
   transition: color 0.3s;
   right: 70px;
+  text-transform: uppercase;
 }
 
 .burger {
@@ -194,7 +191,7 @@ p {
 }
 .portfolio:hover {
   background-color: rgb(19, 145, 113);
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .container {
   display: grid;
@@ -270,7 +267,8 @@ p {
     margin-left: 2rem;
     border-radius: 50px;
   }
-  .skills-line {
+
+  .icons hr {
     display: none;
   }
   .adobe {
@@ -279,7 +277,7 @@ p {
   }
   .html {
     width: 65%;
-    margin-left: 2rem;
+    margin-left: 1.2rem;
     margin-top: 0.5rem;
   }
   .css {
@@ -337,11 +335,15 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 85vw;
+
     place-self: center;
     background-color: rgb(19, 145, 113);
     margin-top: 2rem;
     border-radius: 50px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+  .about-me h2 {
+    font-size: 49px;
   }
 
   p {
@@ -355,6 +357,7 @@ p {
   .portrait {
     width: 82%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .portraitbw {
@@ -366,13 +369,17 @@ p {
   }
 
   .om-mig {
-    padding: 30px;
-  }
-  .skills-line {
+    padding: 27px;
     position: relative;
-    z-index: 1;
-    top: 130px;
-    width: 75%;
+    bottom: 30px;
+  }
+  .icons hr {
+    position: relative;
+    top: 100px;
+    height: 1px;
+    background-color: antiquewhite;
+    width: 400%;
+    margin-left: -10rem;
   }
   .icons {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -380,7 +387,8 @@ p {
     background-color: rgb(19, 145, 113);
     height: 40vh;
     width: 85vw;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
     border-radius: 50px;
   }
   .container {
@@ -408,6 +416,9 @@ p {
   }
   h3 {
     place-self: center;
+  }
+  .adobe {
+    margin-top: 0.3rem;
   }
 
   .html {
@@ -438,6 +449,13 @@ p {
 
   .menu {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(19, 145, 113, 0.9);
+    z-index: 100;
   }
   .burger {
     display: block;
@@ -459,15 +477,14 @@ p {
   }
 
   nav.active .menu {
-    display: block;
+    display: flex;
     background-color: rgb(19, 145, 113, 0.7);
-    position: absolute;
-    top: 20px;
+
+    top: 200px;
     left: 0;
     width: 100%;
     padding: 20px 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    z-index: 3;
   }
 
   nav.active .menu li {
@@ -478,6 +495,18 @@ p {
   nav.active .menu a {
     font-size: 25px;
     text-transform: uppercase;
+  }
+
+  .about-me,
+  .portfolio,
+  .icons {
+    transition: transform 0.3s ease;
+  }
+
+  .about-me.active,
+  .portfolio.active,
+  .icons.active {
+    transform: translateY(230px);
   }
 
   .logo {
