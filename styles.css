@@ -313,9 +313,11 @@ p {
     font-size: 17px;
   }
   .portraitbw {
-    width: 98%;
+    position: absolute; /* Keep the overlay */
+    left: 45px;
+    width: 90%; /* Reduce size of the top image for mobile */
     height: auto;
-    right: 30px;
+    right: 27px;
     bottom: 397px;
   }
   .container {
