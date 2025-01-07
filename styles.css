@@ -225,8 +225,57 @@ p {
   max-height: 100%;
   margin-bottom: -2rem;
 }
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: antiquewhite;
+  margin-top: 3rem;
+
+  place-self: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+}
+
+.cv h2 {
+  grid-column: 2;
+  grid-row: 2;
+  color: rgba(0, 0, 0, 0.555);
+}
+.cv p {
+  position: relative;
+  top: 500px;
+  color: rgba(0, 0, 0, 0.555);
+}
+.cv h3 {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.555);
+}
+.cv img {
+  margin-left: 2rem;
+  grid-row: 2;
+  width: 90%;
+}
 
 @media screen and (min-width: 800px) {
+  .cv {
+    width: 80vw;
+  }
+  .cv h2 {
+    margin-left: -6rem;
+  }
+  .cv p {
+    padding: 40px;
+    margin-left: -5rem;
+  }
+  .cv h3 {
+    padding: 30px 60px;
+  }
+  .cv img {
+    width: 50%;
+    margin-left: 8rem;
+  }
   .sections-together {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,6 +380,20 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .cv h2 {
+    margin-top: -5rem;
+  }
+  .cv p {
+    padding: 30px;
+    margin-top: -2rem;
+  }
+  .cv h3 {
+    padding-bottom: 6rem;
+  }
+  .cv img {
+    margin-top: -6rem;
+    width: 90%;
+  }
   .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -517,6 +580,9 @@ p {
 
   html {
     background-size: 200%;
+  }
+  .cv {
+    height: 100vh;
   }
 }
 @media screen and (max-width: 600px) {
