@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector("nav");
   const menu = document.querySelector(".menu");
-  const sections = document.querySelectorAll(".about-me, .portfolio, .icons, .skills-line, .contact");
+  const sections = document.querySelectorAll(".about-me, .portfolio, .icons, .skills-line, .contact,.moi,footer");
 
   burger.addEventListener("click", burgerClick);
 
