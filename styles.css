@@ -12,7 +12,7 @@ body {
 
 header {
   position: sticky;
-  background-color: rgb(14, 107, 84); /* Background image */
+  background-color: rgb(14, 107, 84);
   background: rgba(19, 145, 113, 0.4);
   background-size: cover;
   background-position: center;
@@ -825,6 +825,7 @@ p {
     padding-bottom: 2.6rem;
   }
 }
+
 @media screen and (max-width: 600px) {
   nav.active .menu li {
     margin-left: 25rem;
@@ -923,5 +924,8 @@ p {
     width: 80%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  html {
+    background-size: cover;
   }
 }
