@@ -798,4 +798,59 @@ p {
   nav.active .menu li {
     margin-left: 25rem;
   }
+  .adobe {
+    width: 36%;
+    margin-left: 0.5rem;
+    margin-top: -0.1rem;
+  }
+
+  .html {
+    width: 120%;
+    right: 95px;
+  }
+  .css {
+    width: 120%;
+    right: 85px;
+    top: 15px;
+  }
+  .js {
+    width: 200%;
+    top: -26px;
+    right: 115px;
+  }
+  .icons hr {
+    width: 480%;
+  }
+  nav.active .menu {
+    top: 150px;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    margin-left: 23rem;
+  }
+
+  .portrait {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .portraitbw {
+    right: 30px;
+    bottom: 180px;
+    width: 95%; /* Reduce size of the top image for mobile */
+  }
+  .about-me h2 {
+    font-size: 40px;
+  }
+  .icons {
+    margin-left: 2rem;
+  }
+  .footer-social ul li {
+    position: relative;
+    left: 140px;
+  }
+  .logo {
+    margin-left: -1rem;
+  }
 }
