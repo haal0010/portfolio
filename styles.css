@@ -819,6 +819,11 @@ p {
     position: relative;
     left: 210px;
   }
+  .blue-cafe {
+    width: 80%;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
 }
 @media screen and (max-width: 600px) {
   nav.active .menu li {
@@ -913,5 +918,10 @@ p {
   .cv p {
     font-size: 0.9rem;
     left: 140px;
+  }
+  .blue-cafe {
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
