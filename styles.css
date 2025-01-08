@@ -387,6 +387,12 @@ p {
   margin-left: 2rem;
 }
 @media screen and (min-width: 800px) {
+  .portfolio {
+    height: 230vh;
+  }
+  .container {
+    row-gap: 80px;
+  }
   .cv-billede {
     padding: 40px;
   }
