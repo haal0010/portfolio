@@ -514,23 +514,29 @@ p {
     margin-left: -3rem;
     margin-top: 5rem;
   }
+  .text3 h3 {
+    margin-left: 4rem;
+  }
   .text2 {
     margin-right: -3rem;
     margin-top: 4rem;
   }
   .text2 h3 {
-    margin-left: 24rem;
+    margin-left: 30rem;
   }
   .text1 {
     margin-left: -3rem;
     margin-top: 5rem;
+  }
+  .text1 h3 {
+    margin-left: 4rem;
   }
   .text4 {
     margin-right: -3rem;
     margin-top: 5rem;
   }
   .text4 h3 {
-    margin-left: 27rem;
+    margin-left: 28rem;
   }
 
   .blue-cafe {
