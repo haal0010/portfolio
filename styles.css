@@ -774,13 +774,17 @@ p {
 
   .about-me,
   .portfolio,
-  .icons {
+  .icons,
+  .contact,
+  footer {
     transition: transform 0.3s ease;
   }
 
   .about-me.active,
   .portfolio.active,
-  .icons.active {
+  .icons.active,
+  .contact.active,
+  footer.active {
     transform: translateY(230px);
   }
 
