@@ -624,6 +624,7 @@ p {
 
   p {
     font-size: 17px;
+    margin-top: -1.5rem;
   }
 
   .image-container {
@@ -632,14 +633,14 @@ p {
 
   .portrait {
     width: 82%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 
   .portraitbw {
     position: absolute; /* Keep the overlay */
     right: 40px;
-    bottom: 100px;
+    bottom: 200px;
     width: 95%; /* Reduce size of the top image for mobile */
     transition: opacity 0.3s ease; /* Smooth transition */
   }
@@ -793,6 +794,10 @@ p {
   html {
     background-size: 200%;
   }
+  .footer-social ul li {
+    position: relative;
+    left: 210px;
+  }
 }
 @media screen and (max-width: 600px) {
   nav.active .menu li {
@@ -836,13 +841,17 @@ p {
   }
 
   .portraitbw {
-    right: 30px;
-    bottom: 180px;
-    width: 95%; /* Reduce size of the top image for mobile */
+    left: -25px;
+    bottom: 350px;
+    width: 100%; /* Reduce size of the top image for mobile */
+  }
+  p {
+    font-size: 15px;
   }
   .about-me h2 {
     font-size: 40px;
   }
+
   .icons {
     margin-left: 2rem;
   }
@@ -882,7 +891,6 @@ p {
 
   .cv p {
     font-size: 0.9rem;
-
     left: 140px;
   }
 }
