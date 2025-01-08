@@ -42,6 +42,39 @@ header a:hover {
     transform: translateY(0);
   }
 }
+/* Footer Styles */
+.footer {
+  background-color: rgb(14, 107, 84); /* Background image */
+  background: rgba(19, 145, 113, 0.4);
+  color: #fff; /* White text */
+
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 1rem;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+  color: #ecc74b; /* Add a highlight color on hover (e.g., tomato red) */
+}
 
 img {
   width: 80%;
@@ -270,6 +303,78 @@ p {
 .navn {
   grid-row: 1;
   grid-column: 1;
+}
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.card {
+  padding: 0 20px;
+  margin: 0 10px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card i {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px; /* Set size for the icons */
+  height: 60px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease, transform 0.3s ease, width 0.3s ease, height 0.3s ease, filter 0.3s ease;
+}
+
+/* Set the icons based on their respective class names */
+.card .email {
+  background-image: url("img/email.svg");
+}
+
+.card .phone {
+  background-image: url("img/phone.svg");
+}
+
+.card .address {
+  background-image: url("img/address.svg");
+}
+
+/* On hover, show the icon and scale it */
+.card:hover i {
+  opacity: 1;
+  transform: translateX(-50%) scale(0.6); /* Scale down the icon */
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.4));
+}
+
+.card p {
+  margin-top: 20px;
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.8));
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+.denmark {
+  margin-left: 2rem;
 }
 @media screen and (min-width: 800px) {
   .cv {
