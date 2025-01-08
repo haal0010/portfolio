@@ -32,6 +32,12 @@ header a:hover {
   color: #ecc74b;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none; /* Removes the bullet (dot) */
+}
 
 @keyframes fadeIn {
   0% {
