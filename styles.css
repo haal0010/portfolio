@@ -66,7 +66,7 @@ header a:hover {
   margin-left: 50px;
   margin-top: 1rem;
   position: relative;
-  left: 500px;
+  left: 490px;
 }
 
 .footer-social ul li a {
@@ -535,13 +535,16 @@ p {
 .contact {
   place-self: center;
   background-color: rgb(19, 145, 113);
-
+  margin-bottom: 2rem;
   border-radius: 50px;
   margin-top: 4rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 800px) {
+  .contact {
+    width: 87vw;
+  }
   .cv {
     height: 120vh;
   }
