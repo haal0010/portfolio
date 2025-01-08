@@ -512,6 +512,9 @@ p {
     margin-right: -3rem;
     margin-top: 4rem;
   }
+  .text2 h3 {
+    margin-left: 24rem;
+  }
   .text1 {
     margin-left: -3rem;
     margin-top: 5rem;
@@ -519,6 +522,9 @@ p {
   .text4 {
     margin-right: -3rem;
     margin-top: 5rem;
+  }
+  .text4 h3 {
+    margin-left: 27rem;
   }
 
   .blue-cafe {
