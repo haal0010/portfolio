@@ -386,6 +386,9 @@ p {
   margin-left: 2rem;
 }
 @media screen and (min-width: 800px) {
+  .cv-billede {
+    padding: 40px;
+  }
   .cv {
     height: 145vh;
   }
@@ -393,7 +396,7 @@ p {
     position: relative;
     left: 550px;
     font-size: 2.8rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .cv h2 {
@@ -433,7 +436,7 @@ p {
     padding: 30px 60px;
   }
   .moi img {
-    width: 50%;
+    width: 45%;
     margin-left: 8rem;
     margin-top: 5rem;
   }
@@ -446,10 +449,7 @@ p {
     margin-left: 4.5rem;
     width: 57vw;
   }
-  .om-mig {
-    margin-left: 2.5rem;
-    margin-top: 4rem;
-  }
+
   .portrait {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -851,5 +851,37 @@ p {
   }
   .logo {
     margin-left: -1rem;
+  }
+  .moi h2 {
+    font-size: 1.5rem;
+  }
+  .moi p {
+    font-size: 0.7rem;
+  }
+  .moi img {
+    margin-top: 8rem;
+  }
+  .cv h1 {
+    font-size: 1.7rem;
+    left: 130px;
+  }
+
+  .cv h2 {
+    font-size: 1.3rem;
+    left: 140px;
+  }
+
+  .cv h3 {
+    font-size: 0.8rem;
+    left: 155px;
+  }
+  .date {
+    margin-left: 1.5rem;
+  }
+
+  .cv p {
+    font-size: 0.9rem;
+
+    left: 140px;
   }
 }
