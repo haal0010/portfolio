@@ -643,11 +643,6 @@ p {
     transition: opacity 0.3s ease; /* Smooth transition */
   }
 
-  .om-mig {
-    padding: 27px;
-    position: relative;
-    bottom: 30px;
-  }
   .icons hr {
     position: relative;
     top: 100px;
