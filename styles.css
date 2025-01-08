@@ -62,9 +62,11 @@ header a:hover {
 }
 
 .footer-social ul li {
-  display: inline-block;
-  margin-right: 20px;
+  display: inline-flex;
+  margin-left: 50px;
   margin-top: 1rem;
+  position: relative;
+  left: 500px;
 }
 
 .footer-social ul li a {
