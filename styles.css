@@ -589,7 +589,6 @@ p {
     font-size: 1rem;
     position: relative;
     left: 170px;
-    padding: 10px;
     place-self: revert;
   }
   .proficiencies {
@@ -598,6 +597,7 @@ p {
 
   .moi {
     width: 90vw;
+    height: 250vh;
   }
 
   .moi img {
