@@ -234,7 +234,7 @@ p {
 .moi {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: antiquewhite;
+  background-color: rgb(250, 235, 215);
   margin-top: 3rem;
 
   place-self: center;
@@ -424,6 +424,14 @@ p {
     grid-row: 3;
     grid-column: 1 / span 1;
   }
+}
+.contact {
+  place-self: center;
+  background-color: rgb(19, 145, 113);
+
+  border-radius: 50px;
+  margin-top: 4rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 800px) {
