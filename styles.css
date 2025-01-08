@@ -91,7 +91,7 @@ img {
 }
 
 html {
-  background-image: url(img/texturebckgrnd.jpg);
+  background-image: url(img/texturebckgrnd_resultat.webp);
   background-repeat: repeat-x;
   animation: animatedBackground 30s linear infinite;
 }
