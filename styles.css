@@ -116,6 +116,12 @@ nav {
 .burger {
   display: none;
 }
+h1 {
+  color: rgba(0, 0, 0, 0.555);
+
+  font-family: "Lora", serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
 section h2 {
   padding: 30px 60px;
   font-size: 50px;
@@ -225,7 +231,7 @@ p {
   max-height: 100%;
   margin-bottom: -2rem;
 }
-.cv {
+.moi {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: antiquewhite;
@@ -236,45 +242,86 @@ p {
   border-radius: 50px;
 }
 
-.cv h2 {
-  grid-column: 2;
-  grid-row: 2;
+.moi h2 {
   color: rgba(0, 0, 0, 0.555);
 }
-.cv p {
-  position: relative;
-  top: 500px;
+.moi p {
   color: rgba(0, 0, 0, 0.555);
 }
-.cv h3 {
-  grid-column: 1;
-  grid-row: 1;
+.moi h3 {
   font-size: 25px;
   color: rgba(0, 0, 0, 0.555);
 }
-.cv img {
-  margin-left: 2rem;
-  grid-row: 2;
+.moi img {
+  grid-row: 1;
+  grid-column: 1;
   width: 90%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
-
+.cv {
+  grid-row: 2;
+  grid-column: 1;
+}
+.cv-billede {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 6rem;
+}
+.navn {
+  grid-row: 1;
+  grid-column: 1;
+}
 @media screen and (min-width: 800px) {
   .cv {
+    height: 145vh;
+  }
+  .cv h1 {
+    position: relative;
+    left: 550px;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+
+  .cv h2 {
+    position: relative;
+    left: 435px;
+    place-self: end center;
+  }
+
+  .cv h3 {
+    position: relative;
+    left: 550px;
+  }
+  .date {
+    margin-left: 2rem;
+  }
+
+  .cv p {
+    font-size: 1.1rem;
+    place-self: end center;
+    margin-right: -45rem;
+  }
+  .proficiencies {
+    margin-top: 20px;
+  }
+
+  .moi {
     width: 80vw;
   }
-  .cv h2 {
+  .moi h2 {
     margin-left: -6rem;
   }
-  .cv p {
-    padding: 40px;
-    margin-left: -5rem;
+  .moi p {
+    padding: 30px;
+    margin-left: -8rem;
   }
-  .cv h3 {
+  .moi h3 {
     padding: 30px 60px;
   }
-  .cv img {
+  .moi img {
     width: 50%;
     margin-left: 8rem;
+    margin-top: 5rem;
   }
   .sections-together {
     display: grid;
@@ -380,19 +427,59 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .cv {
+    height: 120vh;
+  }
+  .cv h1 {
+    font-size: 2.2rem;
+    position: relative;
+    left: 180px;
+    margin-top: 3rem;
+  }
+
   .cv h2 {
-    margin-top: -5rem;
+    font-size: 1.5rem;
+    position: relative;
+    left: 215px;
   }
-  .cv p {
-    padding: 30px;
-    margin-top: -2rem;
-  }
+
   .cv h3 {
-    padding-bottom: 6rem;
+    font-size: 1.2rem;
+    position: relative;
+    left: 190px;
+    padding: 5px;
   }
-  .cv img {
-    margin-top: -6rem;
+  .date {
+    margin-left: 2rem;
+  }
+
+  .cv p {
+    font-size: 1rem;
+    position: relative;
+    left: 170px;
+    padding: 10px;
+    place-self: revert;
+  }
+  .proficiencies {
+    margin-left: -1rem;
+  }
+
+  .moi {
+    width: 90vw;
+  }
+
+  .moi img {
+    margin-top: 5rem;
     width: 90%;
+    margin-left: 2rem;
+  }
+  .moi p {
+    padding-left: 35px;
+  }
+
+  .navn {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
   }
   .about-me {
     display: grid;
@@ -477,7 +564,7 @@ p {
   .container p {
     margin-left: 1.5rem;
   }
-  h3 {
+  .container h3 {
     place-self: center;
   }
   .adobe {
@@ -580,9 +667,6 @@ p {
 
   html {
     background-size: 200%;
-  }
-  .cv {
-    height: 100vh;
   }
 }
 @media screen and (max-width: 600px) {
