@@ -397,6 +397,45 @@ p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   place-self: center;
 }
+
+.web-grund,
+.emnesite-section,
+.animation,
+.passion-site,
+.group-project {
+  margin-bottom: 3rem;
+  background-color: rgb(19, 145, 113);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+}
+.web-grund {
+  margin-top: 5rem;
+}
+.emnesite-section,
+a {
+  color: #ebd384;
+}
+.emnesite-section,
+a:hover {
+  color: #1f1e1e;
+}
+
+.scrolling-content {
+  background-color: rgb(18, 99, 79);
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 50px;
+  max-width: 90%;
+  place-self: center;
+}
+.scrolling-content img {
+  display: inline-block;
+  padding: 10px;
+}
+.feed-them-birds {
+  margin-bottom: 4rem;
+}
 @media screen and (min-width: 800px) {
   .portfolio {
     height: 230vh;
