@@ -192,22 +192,6 @@ p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.adobe {
-  width: 50%;
-  grid-column: 1 / 2;
-  position: relative;
-  left: 50px;
-  top: 30px;
-}
-.html {
-  grid-column: 2 / 3;
-}
-.css {
-  grid-column: 3 / 4;
-}
-.js {
-  grid-column: 4 / 5;
-}
 .about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -215,12 +199,34 @@ p {
   margin-top: 2rem;
   border-radius: 50px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  align-items: center;
 }
 
+.about-text {
+  place-self: center;
+  margin: 0;
+}
 .image-container {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1;
+  display: grid;
+  place-self: center;
+  width: 100%; /* Make it responsive */
+  max-width: 400px; /* Set a max width to prevent it from growing too large */
+  aspect-ratio: 1 / 1; /* Maintain a square ratio for images */
+}
+.portrait {
+  grid-area: 1/1;
+  width: 100%; /* Ensure it scales with its container */
+  height: 100%;
+  object-fit: cover;
+}
+.portraitbw {
+  grid-area: 1/1;
+  place-self: center;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+
+  object-fit: cover;
 }
 
 .portraitbw:hover {
