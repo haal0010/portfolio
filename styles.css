@@ -100,10 +100,8 @@ html {
 }
 .logo img {
   max-width: 55%;
-  margin-left: -150px;
 }
 .logo {
-  position: relative;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -147,14 +145,14 @@ nav {
   width: 100%;
   height: 2px;
   background-color: white;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   transition: 0.2s linear;
 }
 .burger {
   display: none;
 }
 h1 {
-  color: rgba(0, 0, 0, 0.555);
+  color: antiquewhite;
 
   font-family: "Lora", serif;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -170,6 +168,12 @@ h3 {
   font-family: "Lora", serif;
   color: antiquewhite;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+h4 {
+  font-family: "Lora", serif;
+  color: antiquewhite;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
 }
 hr {
   width: 85%;
