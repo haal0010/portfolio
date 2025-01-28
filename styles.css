@@ -629,6 +629,149 @@ a:hover {
     grid-row: 3;
     grid-column: 1 / span 1;
   }
+  /*Process*/
+
+  .web-grund {
+    width: 90vw;
+    place-self: center;
+    padding: 40px;
+  }
+  .web-grund h1 {
+    margin-left: 2rem;
+  }
+  .indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    place-self: center;
+  }
+
+  .indhold img {
+    max-width: 60%;
+    margin-left: 6rem;
+  }
+  .layouts {
+    margin-top: 2rem;
+  }
+
+  .layouts p {
+    grid-column: 1/-1;
+  }
+
+  .learnt-web {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .emnesite-section {
+    width: 90vw;
+    place-self: center;
+    padding: 40px;
+  }
+  .emnesite-section p {
+    text-align: center;
+  }
+
+  .ux-ui {
+    margin-left: 2rem;
+  }
+  .images-emnesite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 /-1;
+    width: 70%;
+    place-self: center;
+  }
+
+  .text-emnesite {
+    grid-column: 1; /* Place text in the first column */
+  }
+
+  .animation {
+    width: 90vw;
+    place-self: center;
+    padding: 40px;
+  }
+  .animation h1 {
+    margin-left: 2rem;
+  }
+  .animation p {
+    text-align: center;
+  }
+  .animation h4 {
+    text-align: center;
+  }
+  .sketch-animation img {
+    width: 50%;
+    place-self: center;
+  }
+  .diagram-kodning {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+  }
+  .diagram-kodning img {
+    width: 90%;
+    margin-left: 2.5rem;
+  }
+
+  .screens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding: 10px;
+    gap: 10px;
+    margin-left: 6rem;
+  }
+  .elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 3rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .worm3 {
+    height: 57%;
+  }
+  .goals-anim {
+    margin-top: 3rem;
+  }
+
+  .passion-site {
+    width: 90vw;
+    place-self: center;
+    padding: 40px;
+  }
+  .passion-site h1 {
+    margin-left: 2rem;
+  }
+  .passion-site p {
+    text-align: center;
+    padding: 20px;
+  }
+  .group-project {
+    width: 90vw;
+    place-self: center;
+    padding: 40px;
+  }
+  .group-project p {
+    text-align: center;
+  }
+
+  .group-project h1 {
+    margin-left: 2rem;
+  }
+  .group-project h4 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .tests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .likert-test {
+    grid-column: 2;
+  }
 }
 
 @media screen and (max-width: 800px) {
