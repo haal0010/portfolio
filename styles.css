@@ -1055,51 +1055,12 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  nav.active .menu li {
-    margin-left: 25rem;
-  }
-  .adobe {
-    width: 36%;
-    margin-left: 0.5rem;
-    margin-top: -0.1rem;
-  }
+  /*Forside*/
 
-  .html {
-    width: 120%;
-    right: 95px;
-  }
-  .css {
-    width: 120%;
-    right: 85px;
-    top: 15px;
-  }
-  .js {
-    width: 200%;
-    top: -26px;
-    right: 115px;
-  }
-  .icons hr {
-    width: 480%;
-  }
   nav.active .menu {
-    top: 150px;
+    margin-top: 20rem;
   }
 
-  nav.active .menu li {
-    margin: 10px 20px;
-    margin-left: 23rem;
-  }
-
-  .portrait {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .portraitbw {
-    left: -25px;
-    bottom: 350px;
-    width: 100%; /* Reduce size of the top image for mobile */
-  }
   p {
     font-size: 15px;
   }
@@ -1107,47 +1068,12 @@ a:hover {
     font-size: 40px;
   }
 
-  .icons {
-    margin-left: 2rem;
-  }
-  .footer-social ul li {
-    position: relative;
-    left: 140px;
-  }
-  .logo {
-    margin-left: -1rem;
-  }
-  .moi h2 {
-    font-size: 1.5rem;
-  }
-  .moi p {
-    font-size: 0.7rem;
-  }
-  .moi img {
-    margin-top: 8rem;
-  }
-  .cv h1 {
-    font-size: 1.7rem;
-    left: 130px;
+  /*CV About*/
+
+  .cv {
+    text-align: center;
   }
 
-  .cv h2 {
-    font-size: 1.3rem;
-    left: 140px;
-  }
-
-  .cv h3 {
-    font-size: 0.8rem;
-    left: 155px;
-  }
-  .date {
-    margin-left: 1.5rem;
-  }
-
-  .cv p {
-    font-size: 0.9rem;
-    left: 140px;
-  }
   .blue-cafe {
     width: 80%;
     padding-top: 2rem;
@@ -1155,5 +1081,9 @@ a:hover {
   }
   html {
     background-size: cover;
+  }
+
+  .card p {
+    font-size: 7.8px;
   }
 }
