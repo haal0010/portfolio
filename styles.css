@@ -63,6 +63,10 @@ li {
   padding: 20px;
   margin-right: 3rem;
 }
+.footer-social ul {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
 
 .footer-social ul li {
   display: inline-flex;
@@ -131,7 +135,7 @@ nav {
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
-  right: 70px;
+
   text-transform: uppercase;
 }
 
@@ -184,7 +188,8 @@ p {
   font-family: "Lora", serif;
   color: white;
   font-size: 22px;
-  padding: 35px;
+  padding: 10px;
+  margin: 1rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 /*skills*/
@@ -233,7 +238,7 @@ p {
   opacity: 0; /* Change opacity on hover */
 }
 .portfolio {
-  height: 200vh;
+  height: auto;
   width: 90vw;
   place-self: center;
   background-color: rgb(19, 145, 113, 0.6);
@@ -278,47 +283,7 @@ p {
   max-height: 100%;
   margin-bottom: -2rem;
 }
-.moi {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgb(250, 235, 215);
-  margin-top: 3rem;
 
-  place-self: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-  border-radius: 50px;
-  margin-bottom: 3rem;
-}
-
-.moi h2 {
-  color: rgba(0, 0, 0, 0.555);
-}
-.moi p {
-  color: rgba(0, 0, 0, 0.555);
-}
-.moi h3 {
-  font-size: 25px;
-  color: rgba(0, 0, 0, 0.555);
-}
-.moi img {
-  grid-row: 1;
-  grid-column: 1;
-  width: 90%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-}
-.cv {
-  grid-row: 2;
-  grid-column: 1;
-}
-.cv-billede {
-  grid-column: 2;
-  grid-row: 1;
-  margin-top: 6rem;
-}
-.navn {
-  grid-row: 1;
-  grid-column: 1;
-}
 .contact-info {
   display: flex;
   width: 100%;
@@ -435,6 +400,57 @@ a:hover {
 }
 .feed-them-birds {
   margin-bottom: 4rem;
+}
+/* About */
+.moi {
+  background-color: rgb(19, 145, 113);
+  margin-top: 3rem;
+  place-self: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+  margin-bottom: 3rem;
+  width: 85vw;
+}
+
+.cv-billede {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 5rem;
+}
+.cv-billede {
+  grid-column: 1;
+  margin-left: 4rem;
+}
+.cv-info {
+  grid-column: 2;
+  padding: 20px;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cv {
+  height: 120vh;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.cv h1 {
+  font-size: 2.8rem;
+}
+
+.moi p {
+  padding: 20px;
+}
+.moi h3 {
+  padding: 30px 60px;
+}
+.moi img {
+  max-width: 56%;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  display: inline;
 }
 @media screen and (min-width: 800px) {
   .portfolio {
