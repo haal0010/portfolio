@@ -274,20 +274,8 @@ p {
 
 .blue-cafe {
   background-color: #384896;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-.computer {
-  max-height: 100%;
-  margin-bottom: -5rem;
-}
-.emnesite {
-  max-height: 100%;
-  margin-bottom: -1rem;
-}
-.spil {
-  max-height: 100%;
-  margin-bottom: -2rem;
+  padding-top: 70px;
+  padding-bottom: 80px;
 }
 
 .contact-info {
@@ -592,7 +580,7 @@ a:hover {
   }
 
   .text-emnesite {
-    grid-column: 1; /* Place text in the first column */
+    grid-column: 1;
   }
 
   .animation {
@@ -690,6 +678,7 @@ a:hover {
     border-radius: 50px;
     margin-bottom: 3rem;
     width: 85vw;
+    padding-bottom: 1rem;
   }
 
   .cv-billede {
@@ -824,11 +813,6 @@ a:hover {
     scrollbar-width: thin;
     overflow-y: auto;
     scroll-behavior: smooth;
-  }
-  .container img {
-    width: 70%;
-    border: 2mm solid antiquewhite;
-    margin-bottom: 1rem;
   }
 
   .container h3 {
