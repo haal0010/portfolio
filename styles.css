@@ -12,7 +12,6 @@ body {
 
 header {
   position: sticky;
-  background-color: rgb(14, 107, 84);
   background: rgba(19, 145, 113, 0.4);
   background-size: cover;
   background-position: center;
@@ -54,7 +53,6 @@ li {
   background-color: rgb(14, 107, 84); /* Background image */
   background: rgba(19, 145, 113, 0.4);
   color: #fff; /* White text */
-
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -67,7 +65,6 @@ li {
   display: flex;
   justify-content: center; /* Center items horizontally */
 }
-
 .footer-social ul li {
   display: inline-flex;
   margin-left: 60px;
@@ -82,9 +79,6 @@ li {
 .footer-social ul li a:hover {
   color: #ecc74b; /* Add a highlight color on hover (e.g., tomato red) */
 }
-.footer p {
-  margin: 0;
-}
 
 img {
   width: 100%;
@@ -97,6 +91,7 @@ html {
   background-repeat: repeat-x;
   animation: animatedBackground 50s linear infinite;
 }
+
 @keyframes animatedBackground {
   from {
     background-position: 0% 0%;
@@ -109,7 +104,7 @@ html {
   max-width: 55%;
 }
 .logo {
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.9));
 }
 
 /*burger*/
@@ -138,7 +133,6 @@ nav {
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
-
   text-transform: uppercase;
 }
 
@@ -160,7 +154,6 @@ nav {
 }
 h1 {
   color: antiquewhite;
-
   font-family: "Lora", serif;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -169,7 +162,7 @@ section h2 {
   font-size: 50px;
   color: antiquewhite;
   font-family: "Lora", serif;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 h3 {
   font-family: "Lora", serif;
@@ -194,6 +187,7 @@ p {
   padding: 10px;
   margin: 1rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
 }
 /*skills*/
 .icons {
@@ -209,7 +203,6 @@ p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   align-items: center;
 }
-
 .about-text {
   place-self: center;
   margin: 0;
@@ -240,15 +233,15 @@ p {
 .portraitbw:hover {
   opacity: 0; /* Change opacity on hover */
 }
-.portfolio h2 {
-  margin-left: 1rem;
-}
+
+/*Portfolio Section*/
+
 .portfolio {
   height: auto;
   width: 90vw;
   place-self: center;
   background-color: rgb(19, 145, 113, 0.6);
-  margin-bottom: -2rem;
+  margin-bottom: -1rem;
   border-radius: 50px;
   margin-top: 2rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
@@ -257,19 +250,8 @@ p {
   background-color: rgb(19, 145, 113);
   transition: 0.3s ease-in-out;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 90px;
-  row-gap: 40px;
-  grid-gap: 20px;
-}
-
-.container img {
-  object-fit: cover;
-  border: 2mm solid antiquewhite;
-  margin-left: 3.5rem;
+.portfolio h2 {
+  margin-left: 1rem;
 }
 
 .blue-cafe {
@@ -291,9 +273,9 @@ p {
   padding: 0 20px;
   margin: 0 10px;
   width: 300px;
-  height: 200px;
+  height: 160px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -306,8 +288,8 @@ p {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px; /* Set size for the icons */
-  height: 60px;
+  width: 50px;
+  height: 50px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
   background-size: contain;
   background-repeat: no-repeat;
@@ -415,6 +397,30 @@ a:hover {
   .about-text {
     margin-right: 2rem;
   }
+
+  /*  .image-container {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+  } */
+
+  /* .portrait {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 120px;
+  }*/
+
+  /*.portraitbw {
+    position: absolute;
+    left: 70px;
+    top: 130px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease; /* Smooth transition */
+  /* width: 78%;
+  }*/
   .icons {
     grid-column: 2;
   }
@@ -447,12 +453,10 @@ a:hover {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     font-size: 46px;
   }
-
   .icons hr {
     display: none;
   }
-
-  /*Portfolio Section*/
+  /*Portfolio section*/
   .portfolio {
     display: grid;
     grid-template-columns: 1fr;
@@ -503,6 +507,11 @@ a:hover {
     padding-left: 20px;
     margin-left: 7rem;
   }
+
+  .emnesite {
+    margin-bottom: -1rem;
+  }
+
   .blue-cafe {
     grid-row: 4;
     grid-column: 2;
@@ -526,6 +535,58 @@ a:hover {
   .card p {
     margin-top: 1rem;
   }
+  /* About */
+  .moi {
+    background-color: rgb(19, 145, 113);
+    margin-top: 3rem;
+    place-self: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    width: 85vw;
+  }
+
+  .cv-billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 5rem;
+  }
+  .cv-billede {
+    grid-column: 1;
+    margin-left: 4rem;
+  }
+  .cv-info {
+    grid-column: 2;
+    padding: 20px;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .cv {
+    height: 120vh;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .cv h1 {
+    font-size: 2.8rem;
+  }
+
+  .moi p {
+    padding: 20px;
+  }
+  .moi h3 {
+    padding: 30px 60px;
+  }
+  .moi img {
+    max-width: 56%;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    display: inline;
+  }
+
   /*Process*/
 
   .web-grund {
@@ -580,7 +641,7 @@ a:hover {
   }
 
   .text-emnesite {
-    grid-column: 1;
+    grid-column: 1; /* Place text in the first column */
   }
 
   .animation {
@@ -669,60 +730,8 @@ a:hover {
   .likert-test {
     grid-column: 2;
   }
-  /* About */
-  .moi {
-    background-color: rgb(19, 145, 113);
-    margin-top: 3rem;
-    place-self: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    border-radius: 50px;
-    margin-bottom: 3rem;
-    width: 85vw;
-    padding-bottom: 1rem;
-  }
-
-  .cv-billede {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 5rem;
-  }
-  .cv-billede {
-    grid-column: 1;
-    margin-left: 4rem;
-  }
-  .cv-info {
-    grid-column: 2;
-    padding: 20px;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .cv {
-    height: auto;
-    text-align: center;
-    margin-top: 6rem;
-  }
-
-  .cv h1 {
-    font-size: 2.8rem;
-  }
-
-  .moi p {
-    padding: 20px;
-  }
-  .moi h3 {
-    padding: 30px 60px;
-  }
-  .moi img {
-    max-width: 56%;
-    margin-left: 5rem;
-    margin-top: 3rem;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    display: inline;
-  }
 }
-
+/*Tablet*/
 @media screen and (max-width: 800px) {
   /* Forside */
 
@@ -813,6 +822,11 @@ a:hover {
     scrollbar-width: thin;
     overflow-y: auto;
     scroll-behavior: smooth;
+  }
+  .container img {
+    width: 70%;
+    border: 2mm solid antiquewhite;
+    margin-bottom: 1rem;
   }
 
   .container h3 {
@@ -962,7 +976,6 @@ a:hover {
     place-self: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   }
-
   .cv-info {
     text-align: center;
   }
