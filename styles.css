@@ -465,6 +465,10 @@ a:hover {
   }
 
   /*Portfolio Section*/
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
