@@ -56,6 +56,9 @@ li {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+.footer p {
+  margin: 0;
+}
 
 .footer-content {
   padding: 20px;
@@ -367,7 +370,7 @@ a:hover {
   white-space: nowrap;
   padding: 10px;
   border-radius: 50px;
-  max-width: 90%;
+  max-width: 70%;
   place-self: center;
 }
 .scrolling-content img {
@@ -382,6 +385,9 @@ a:hover {
   .about-me {
     width: 70vw;
     margin-left: 4.5rem;
+  }
+  .contact h2 {
+    margin-left: 1rem;
   }
 
   .sections-together {
@@ -564,9 +570,10 @@ a:hover {
   }
 
   .cv {
-    height: 120vh;
+    height: auto;
     text-align: center;
     margin-top: 6rem;
+    padding-bottom: 2rem;
   }
 
   .cv h1 {
