@@ -387,7 +387,6 @@ a:hover {
 @media screen and (min-width: 800px) {
   .about-me {
     width: 70vw;
-    margin-left: 4.5rem;
   }
   .contact h2 {
     margin-left: 1rem;
@@ -396,6 +395,8 @@ a:hover {
   .sections-together {
     display: grid;
     grid-template-columns: auto 1fr;
+    place-self: center;
+    gap: 35px;
   }
   .image-container {
     width: 50%;
@@ -440,7 +441,7 @@ a:hover {
     background-color: rgb(19, 145, 113);
     width: 16vw;
     margin-top: 2rem;
-    margin-left: 2.5rem;
+
     border-radius: 50px;
     justify-items: center;
     align-items: center;
