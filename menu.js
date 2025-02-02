@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Move sections when the menu is active
     sections.forEach((section) => {
-      section.classList.toggle("active");
+      section.classList.add("active");
     });
   }
 
