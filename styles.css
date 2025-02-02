@@ -262,6 +262,9 @@ p {
   padding-top: 70px;
   padding-bottom: 80px;
 }
+.blue-cafe img {
+  width: 50%;
+}
 
 .contact-info {
   display: flex;
@@ -953,9 +956,8 @@ a:hover {
   }
 
   .blue-cafe {
-    width: 80%;
-    padding-top: 2.6rem;
-    padding-bottom: 2.6rem;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
   }
 
   /*CV About*/
@@ -1100,11 +1102,6 @@ a:hover {
     text-align: center;
   }
 
-  .blue-cafe {
-    width: 80%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   html {
     background-size: cover;
   }
